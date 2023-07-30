@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/fragment_home_dest"
+    >
+    <fragment android:name="com.tuminh.kidfunny.view.home.FragmentHomePage"
+        android:id="@+id/fragment_home_dest"
+        tools:layout="@layout/fragment_home_page"
+        >
+        <action
+            android:id="@+id/action_fragment_home_dest_to_fragment_game_dest"
+            app:destination="@id/fragment_game_dest" />
+        <action
+            android:id="@+id/action_fragment_home_dest_to_fragment_story_dest"
+            app:destination="@id/fragment_story_dest" />
+    </fragment>
+    <fragment android:name="com.tuminh.kidfunny.view.game.FragmentGamePage"
+        android:id="@+id/fragment_game_dest"
+        tools:layout="@layout/fragment_game_page">
+        <action android:id="@id/action_fragment_home_dest_to_fragment_game_dest"
+            app:popUpTo="@id/fragment_home_dest"/>
+    </fragment>
+
+    <fragment android:name="com.tuminh.kidfunny.view.story.FragmentStoryPage"
+        android:id="@+id/fragment_story_dest"
+        tools:layout="@layout/fragment_story_page">
+        <action android:id="@+id/action_fragment_home_dest_to_fragment_story_dest"
+            app:popUpTo="@id/fragment_home_dest"
+            />
+    </fragment>
+
+</navigation>

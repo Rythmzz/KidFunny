@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">KidFunny</string>
+
+    <string name="home_text_1">Bé An</string>
+    <string name="home_text_2">27/04/2021</string>
+    <string name="home_text_3">Mẹ Kể Con Nghe</string>
+    <string name="home_text_4">Học Mà Chơi</string>
+    <string name="home_text_5">Sự tích quả dưa hấu</string>
+
+    <string name="game_text_1">Bé Tập Đếm</string>
+    <string name="game_text_2">Học chữ cái</string>
+
+    <string name="story_text_1">Cổ Tích Việt Nam</string>
+    <string name="story_text_2">Cổ Tích Thế Giới</string>
+    <string name="story_text_3">Sự Tích Dưa Hấu</string>
+    <string name="story_text_4">Vua Ếch</string>
+
+    <string name="about_text_1">Thêm ảnh</string>
+    <string name="about_text_2">Tên biệt danh</string>
+    <string name="about_text_3">Giới tính</string>
+    <string name="about_text_4">Ngày sinh</string>
+    <string name="about_text_5">Bé trai</string>
+    <string name="about_text_6">Bé gái</string>
+    <string name="about_text_7">27/04/2021</string>
+    <string name="about_text_8">Tiếp tục</string>
+    
+    <string name="story_detail_text_1">Tựa Chuyện</string>
+    <string name="story_detail_text_2">Mô tả</string>
+</resources>

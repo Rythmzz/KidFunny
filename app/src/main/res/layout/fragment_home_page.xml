@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cons_header"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/main_color"
+        >
+        <LinearLayout
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_avatar"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:scaleType="centerCrop"
+                app:civ_circle_background_color="@color/white"
+                />
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/tv_nick_name"
+                    android:paddingLeft="15dp"
+                    android:textSize="22dp"
+                    android:textColor="@color/main_color_4"
+                    android:text="@string/home_text_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tv_born"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/border_edit"
+                    android:textColor="@color/main_color"
+                    android:text="@string/home_text_2"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:padding="15dp"
+        app:layout_constraintTop_toBottomOf="@id/cons_header"
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.6"
+        >
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"/>
+
+        <LinearLayout
+            android:id="@+id/ln_layout_story"
+            android:background="@drawable/decor_1"
+
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/img_decor_2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"/>
+            <TextView
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="22dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="@string/home_text_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"/>
+
+        <LinearLayout
+            android:id="@+id/ln_layout_game"
+            android:background="@drawable/decor_2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/img_decor_3"
+                android:layout_width="150dp"
+                android:layout_height="120dp"/>
+            <TextView
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="22dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="@string/home_text_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+
+
+    </LinearLayout>
+    <ImageView
+        android:src="@drawable/img_decor_1"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+    <ImageView
+        android:layout_marginStart="50dp"
+        android:src="@drawable/img_decor_4"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
